@@ -1,4 +1,5 @@
 class Post
+  attr_accessor :title, :author
   
   @@all = []
   
@@ -9,5 +10,16 @@ class Post
   
   def save
     @@all << self
+  end
+  
+  def self.all
+    @@all
+  end
+  
+  def author_name
+    if @author = nil
+      nil
+    else
+      
   end
 end
