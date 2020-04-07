@@ -24,7 +24,7 @@ class Author
   end
   
   def posts
-    Post.all.collect
+    Post.all.select {|post|}
   end
   
   def self.post_count
