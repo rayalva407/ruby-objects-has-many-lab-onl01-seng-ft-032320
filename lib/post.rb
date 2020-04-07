@@ -20,6 +20,7 @@ class Post
     if @author = nil
       nil
     else
-      
+      @author.name
+    end
   end
 end
