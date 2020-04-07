@@ -23,6 +23,10 @@ class Author
     @@total_posts += 1
   end
   
+  def posts
+    Post.all.collect
+  end
+  
   def self.post_count
     @@total_posts
   end
