@@ -1,7 +1,7 @@
 class Author
   attr_accessor :name, :posts
   
-  @@total_posts = 0
+  @@total_posts = 1
   
   def initialize(name) 
     @name = name
